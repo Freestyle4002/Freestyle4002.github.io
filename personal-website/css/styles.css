@@ -1,0 +1,154 @@
+body {
+    font-family: 'Verdana', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav.menu {
+    background-color: #0056b3;
+    height: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav.menu ul li {
+    margin: 0 20px;
+}
+
+nav.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tab-content {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.content-image {
+    margin-right: 20px;
+}
+
+.content-image img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.content-text {
+    flex: 1;
+}
+
+.content-text h2 {
+    margin-top: 0;
+}
+
+.content-text p, .content-text ul {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#trailArea {
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    position: relative;
+    margin-top: 20px;
+}
+
+.trail-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Mobile Layout (screens smaller than 768px) */
+@media (max-width: 768px) {
+    header {
+        height: 150px;
+    }
+
+    nav.menu {
+        height: 50px;
+    }
+
+    main {
+        max-width: 600px;
+    }
+
+    .tab-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .content-image img {
+        max-width: 100%;
+    }
+
+    .content-text {
+        text-align: center;
+    }
+
+    .content-text p {
+        font-size: 0.9em;
+    }
+}
